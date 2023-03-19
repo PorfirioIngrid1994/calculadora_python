@@ -1,0 +1,37 @@
+print('\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n')
+print('\033[1;31;43mSeja muito bem-vindo a sua Calculadora Python\033[m')
+print('\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n')
+
+while True:
+    try:
+        primeiro_num_escolhido = int(input('Escolha o primeiro número: '))
+        segundo_num_escolhido = int(input('Escolha o segundo número: '))
+        operador_escolhido = input('Escolha um tipo de operação para começar: ')
+
+        if operador_escolhido == '+': 
+            resultado = primeiro_num_escolhido + segundo_num_escolhido
+            print (resultado)
+            continue
+
+        elif operador_escolhido == '-':
+            resultado = primeiro_num_escolhido - segundo_num_escolhido
+            print(resultado)
+            continue
+
+        elif operador_escolhido == '*':
+            resultado = primeiro_num_escolhido * segundo_num_escolhido
+            print(resultado)
+            continue
+
+        elif operador_escolhido == '/':
+            resultado = primeiro_num_escolhido / segundo_num_escolhido
+            print(resultado)
+            continue
+        
+        else :
+            print('Negativo! Somente números para realizar a operação. Tente mais tarde...')
+            break
+
+    except :
+        print('Negativo! Somente números para realizar a operação. Tente mais tarde...')
+        break
